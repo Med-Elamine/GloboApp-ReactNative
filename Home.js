@@ -48,7 +48,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         width: '100%',
-        padding: 20
     },
     thumbnail: {
         height: 150,
