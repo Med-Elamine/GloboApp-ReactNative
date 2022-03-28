@@ -56,8 +56,9 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'  
     },
     storyimage: {
-        height:300,
+        height: 300,
         width: '100%',
+        borderRadius: 50,
     },
     title: {
         fontFamily: 'OpenSans',

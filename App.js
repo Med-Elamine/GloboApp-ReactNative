@@ -11,6 +11,7 @@ import HomePage from './Home';
 import Header from './Header';
 import Footer from './Footer';
 import NewsDetail from './NewsDetail';
+import About from './About';
 
 const stack = createStackNavigator();
 
@@ -31,6 +32,7 @@ export default function App() {
       <stack.Navigator initialRouteName='HomePage' headerMode="screen">
         <stack.Screen name='HomePage' component={HomePage} options={{header: () => <Header headerDisplay="GloboMantics" /> }}/>
         <stack.Screen name='NewsDetail' component={NewsDetail} options={{header: () => <Header headerDisplay="News" /> }}/>
+        <stack.Screen name='About' component={About} options={{header: () => <Header headerDisplay="About" /> }}/>
       </stack.Navigator>
 
       <Footer />

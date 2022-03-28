@@ -2,13 +2,14 @@ import React from "react";
 import { Text, View, TouchableOpacity, StyleSheet } from "react-native";
 import * as RootNavigation from "./RootNavigation"
 
+
 export default function Footer(){
     return(
         <View style={styles.footer}>
-            <TouchableOpacity style={styles.button} onPress={() =>RootNavigation.navigate('GloboMantics')}>
+            <TouchableOpacity style={styles.button} onPress={() =>RootNavigation.navigate('HomePage')}>
                 <Text>HOME</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={()=>RootNavigation.navigate('About')}>
                 <Text>ABOUT</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button}>
