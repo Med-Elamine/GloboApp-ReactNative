@@ -10,6 +10,7 @@ import { navigationRef } from './RootNavigation';
 import HomePage from './Home';
 import Header from './Header';
 import Footer from './Footer';
+import NewsDetail from './NewsDetail';
 
 const stack = createStackNavigator();
 
@@ -29,7 +30,9 @@ export default function App() {
     >
       <stack.Navigator initialRouteName='HomePage' headerMode="screen">
         <stack.Screen name='HomePage' component={HomePage} options={{header: () => <Header headerDisplay="GloboMantics" /> }}/>
+        <stack.Screen name='NewsDetail' component={NewsDetail} options={{header: () => <Header headerDisplay="News" /> }}/>
       </stack.Navigator>
+
       <Footer />
     </NavigationContainer>
   );
