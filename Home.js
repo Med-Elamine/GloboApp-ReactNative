@@ -6,7 +6,7 @@ export default function HomePage({navigation}){
     const [newsData, setNewsData] = useState([]);
 
     useEffect(()=>{
-        fetch("https://newsapi.org/v2/everything?q=tesla&from=2022-02-28&sortBy=publishedAt&apiKey=325e35298f0244029c6c42db5bd50290")
+        fetch("GET https://newsapi.org/v2/everything?q=bitcoin&apiKey=325e35298f0244029c6c42db5bd50290")
         .then((resp) => resp.json()
         .then((json) => setNewsData(json.articles))
         .catch((err) => console.error(err))

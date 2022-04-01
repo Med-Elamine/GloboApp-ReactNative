@@ -12,10 +12,12 @@ export default function Footer(){
             <TouchableOpacity style={styles.button} onPress={()=>RootNavigation.navigate('About')}>
                 <Text>ABOUT</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={()=>RootNavigation.navigate('Quote')}>
+            <TouchableOpacity style={styles.button} onPress={()=>RootNavigation.navigate('Quote',{
+                model: 'Footer',modelnumber: 'No message'
+            })}>
                 <Text>QUOTE</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={()=>RootNavigation.navigate('Catalog')}>
                 <Text>CATALOG</Text>
             </TouchableOpacity>
         </View>
